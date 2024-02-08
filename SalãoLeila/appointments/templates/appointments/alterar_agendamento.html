@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends "base.html" %}
+    {% load static %}
+</head>
+<body>
+    {% block content %}
+    <h1>Alterar Agendamento</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="text" id="id_data_hora" name="data_hora">
+        <button type="submit">Salvar Alterações</button>
+        <a href="{% url 'listar_agendamentos' %}">Voltar para Listagem de Agendamentos</a>
+    </form>
+    {% endblock %}
+
+    <!-- Certifique-se de que o jQuery e o jQuery UI estão carregados antes de usar o DateTimePicker -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-timepicker-addon.js' %}"></script> <!-- Certifique-se de incluir o arquivo DateTimePicker -->
+    <script>
+        $(document).ready(function() {
+            console.log("Documento pronto."); // Verifique se o documento está pronto
+          
+            // Certifique-se de que o seletor de ID está selecionando o campo de entrada corretamente
+            var $dataHora = $("#id_data_hora");
+            console.log($dataHora);
+            
+            // Certifique-se de que o DateTimePicker está sendo ativado corretamente
+            $dataHora.datetimepicker();
+        });
+    </script>
+</body>
+</html>

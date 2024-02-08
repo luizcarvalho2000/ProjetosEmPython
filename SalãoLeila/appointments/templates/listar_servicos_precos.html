@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar Serviços e Preços</title>
+</head>
+<body>
+    <h1>Listar Serviços e Preços</h1>
+    
+    <ul>
+        {% for servico in servicos %}
+            <li>
+                <h3>{{ servico.nome }}</h3>
+                <p>Duração: {{ servico.duracao }} minutos</p>
+                <p>Preço: R$ {{ servico.preco.preco }}</p>
+                <a href="{% url 'modificar_servico_preco' servico.id %}">Modificar</a>
+                <a href="{% url 'excluir_servico_preco' servico.id %}">Excluir</a>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'adicionar_servico_preco' %}">Adicionar Serviço e Preço</a>
+</body>
+</html>

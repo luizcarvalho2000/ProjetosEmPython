@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilos do contêiner */
+        #container {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Estilos para o botão de cadastro */
+        #cadastro-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Estilos para o link "Faça login" */
+        #login-link {
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #090909;
+        }
+        p a {
+            text-decoration: none;
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body style="background-color: #f2f2f2;">
+
+<div id="container">
+    <h2 style="color: #333;">Cadastro</h2>
+    <form method="post">
+        {% csrf_token %}
+        
+        <div>
+            <label for="{{ form.username.id_for_label }}">Nome de usuário:</label><br>
+            {{ form.username }}
+        </div>
+
+        <div>
+            <label for="{{ form.password1.id_for_label }}">Senha:</label><br>
+            {{ form.password1 }}
+        </div>
+
+        <div>
+            <label for="{{ form.password2.id_for_label }}">Confirmação de senha:</label><br>
+            {{ form.password2 }}
+        </div>
+        
+        <button id="cadastro-button" type="submit">Cadastrar</button>
+    </form>
+    
+    <p id="login-link">Já possui uma conta? <a href="{% url 'fazer_login' %}">Faça login</a></p>
+</div>
+
+</body>
+</html>

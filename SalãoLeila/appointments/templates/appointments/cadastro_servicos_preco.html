@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Serviços e Preços</title>
+</head>
+<body>
+    <h1>Cadastro de Serviços e Preços</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ servico_form.as_p }}
+        {{ preco_form.as_p }}
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="{% url 'listar_servicos_precos' %}">Voltar para Listagem de Serviços e Preços</a>
+</body>
+</html>

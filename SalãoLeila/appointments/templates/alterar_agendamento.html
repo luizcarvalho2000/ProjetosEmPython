@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% extends "base.html" %}
+    {% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Agendamento</title>
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+</head>
+<body>
+    <h1>Alterar Agendamento</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="text" id="id_data_hora" name="data_hora">
+        <button type="submit">Salvar Alterações</button>
+        <a href="{% url 'listar_agendamentos' %}">Voltar para Listagem de Agendamentos</a>
+    </form>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script>
+        $(function() {
+          // Ative o seletor de data e hora
+          $("#id_data_hora").datetimepicker();
+        });
+    </script>
+</body>
+</html>
+{% endblock %}
+
+</body>
+</html>

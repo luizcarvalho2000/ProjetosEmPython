@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Agendamento</title>
+</head>
+<body>
+    <h1>Criar Agendamento</h1>
+    <form method="post">
+        {% csrf_token %}
+        
+        <!-- Adicione um campo para selecionar os serviços -->
+        <div class="form-group">
+            <label for="{{ form.servicos.id_for_label }}">Serviços:</label>
+            {{ form.servicos }}
+        </div>
+
+        <!-- Adicione um campo para selecionar os preços -->
+        <!--div class="form-group">
+            <label for="{{ form.preco.id_for_label }}">Preço:</label>
+            {{ form.preco }}
+        </div>-->
+        
+        <!-- Adicione um campo para selecionar a data e hora -->
+        <div class="form-group">
+            <label for="{{ form.data_hora.id_for_label }}">Data e Hora:</label>
+            {{ form.data_hora }}
+        </div>
+        
+        <button type="submit">Salvar Agendamento</button>
+    </form>
+    <a href="{% url 'listar_agendamentos' %}">Voltar para Listagem de Agendamentos</a>
+
+     <a href="{% url 'pagina_inicial' %}">Página Inicial</a>
+</body>
+</html>

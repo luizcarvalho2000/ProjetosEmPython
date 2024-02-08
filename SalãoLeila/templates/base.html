@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Cabeleleila Leila Salão de Beleiza{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Cabeleleila Leila Salão de Beleiza</h1>
+        <nav>
+        
+            <ul>
+                               
+                <li><a href="{% url 'listar_agendamentos' %}">Listar Agendamentos</a></li>
+                <li><a href="{% url 'criar_agendamento' %}">Criar Agendamento</a></li>
+                <li><a href="{% url 'fazer_logout' %}">Sair</a></li>
+                
+                <!-- Adicione mais links de navegação conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cabeleleila Leila Salão de Beleiza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff9900;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #sobre {
+            margin-top: 20px;
+        }
+
+        #sobre h2 {
+            color: #ff6600;
+        }
+
+        #sobre p {
+            line-height: 1.5;
+        }
+
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabeleleila Leila Salão de Beleiza</h1>
+        <nav>
+            {% if user.is_authenticated %}
+            <a href="{% url 'listar_agendamentos' %}">Listar Agendamentos</a>
+            <a href="{% url 'criar_agendamento' %}">Criar Agendamento</a>
+            <a href="{% url 'meus_agendamentos' %}">Meus Agendamentos</a>
+            <a href="{% url 'fazer_logout' %}">Sair</a>
+            {% else %}
+            <a href="{% url 'fazer_login' %}">Login Cliente</a>
+            <a href="{% url 'registrar_usuario' %}">Registre-se</a> 
+            {% endif %}
+            <a href="{% url 'admin:login' %}" target="_blank">Login Admin</a> 
+        </nav>
+    </header>
+    <main>
+        <h2>Bem-vindo ao sistema de agendamento da Cabeleleila Leila Salão de Beleiza</h2>
+        <p>Agende os melhores serviços de beleza e bem-estar conosco!</p>
+    </main>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Cabeleleila Leila Salão de Beleiza é o lugar perfeito para cuidar da sua aparência e bem-estar.</p>
+        <p>Com uma equipe altamente qualificada e serviços de alta qualidade, estamos comprometidos em proporcionar a melhor experiência aos nossos clientes.</p>
+        <p>Nosso salão oferece uma ampla gama de serviços, desde cortes de cabelo modernos e coloração até tratamentos de spa relaxantes.</p>
+        <p>Nossa missão é ajudar você a se sentir confiante e bonito(a) em todas as ocasiões.</p>
+        <p>Estamos ansiosos para recebê-lo em nosso salão e cuidar da sua beleza e bem-estar. Agende um horário conosco e experimente o que temos a oferecer!</p>
+    </section>
+</body>
+</html>

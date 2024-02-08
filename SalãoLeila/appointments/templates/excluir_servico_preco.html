@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Serviço e Preço</title>
+</head>
+<body>
+    <h1>Excluir Serviço e Preço</h1>
+    
+    <p>Tem certeza de que deseja excluir o serviço "{{ servico.nome }}" e seu preço?</p>
+    
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+    </form>
+    
+    <a href="{% url 'listar_servicos_precos' %}">Cancelar</a>
+</body>
+</html>

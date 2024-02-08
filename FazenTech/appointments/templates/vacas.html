@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Lista de Vacas</h2>
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Raça</th>
+      <th>Idade</th>
+      <th>Peso</th>
+      <th>Leite Diário</th>
+    </tr>
+  {% for vaca in vacas %}
+    <tr>
+      <td>{{ vaca.nome }}</td>
+      <td>{{ vaca.raca }}</td>
+      <td>{{ vaca.idade }}</td>
+      <td>{{ vaca.peso }}</td>
+      <td>{{ vaca.leite_diario }}</td>
+    </tr>
+  {% empty %}
+    <tr>
+      <td colspan="5">Não há vacas para exibir.</td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock %}

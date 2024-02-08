@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Agendamentos</title>
+</head>
+<body>
+    <h1>Meus Agendamentos</h1>
+    <ul>
+        {% for agendamento in agendamentos %}
+            <li>
+                <strong>Cliente:</strong> {{ agendamento.cliente.nome }}<br>
+                <strong>Serviços:</strong> {% for servico in agendamento.servicos.all %}{{ servico.nome }}, {% endfor %}<br>
+                <strong>Data e Hora:</strong> {{ agendamento.data_hora|date:"d/m/Y H:i" }}<br>
+                <strong>Confirmado:</strong> {% if agendamento.confirmado %}Sim{% else %}Não{% endif %}<br>
+                <strong>Cancelado:</strong> {% if agendamento.cancelado %}Sim{% else %}Não{% endif %}<br>
+                <strong>Remarcar:</strong> {% if agendamento.remarcar %}Sim{% else %}Não{% endif %}<br>
+            </li>
+        {% endfor %}
+    </ul>
+        <a href="{% url 'criar_agendamento' %}">Criar Agendamento</a>
+        
+        <a href="{% url 'pagina_inicial' %}">Página Inicial</a>
+</body>
+</html>
