@@ -106,4 +106,8 @@ btn7.place(x=96, y=135)
 btn8 = Button(frameBaixo, text="", width=3, height=1, relief=FLAT, font=('Ivy, 20 bold'), overrelief=RIDGE, bg=fundo, fg=co7)
 btn8.place(x=180, y=135)
 
+btnJogar = Button(frameBaixo, text="Jogar", width=10, height=1, relief=RAISED, font=('Ivy, 10 bold'), overrelief=RIDGE, bg=fundo, fg=co0)
+btnJogar.place(x=85, y=210)
+
+
 janela.mainloop()
