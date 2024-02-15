@@ -2,6 +2,11 @@ import tkinter
 from tkinter import *
 from tkinter import ttk, messagebox
 
+
+# ----- Funções ----- #
+
+
+
 # ----- cores ----- #
 
 co0 = "#FFFFFF"  # branca / white
@@ -69,8 +74,6 @@ linha4 = Label(frameBaixo, text="", width=200, padx=2, relief=FLAT, anchor=CENTE
 linha4.place(x=30, y=130)
 
 # ----- Criando Botões ----- #
-
-# Linha 0
 
 btn0 = Button(frameBaixo, text="", width=3, height=1, relief=FLAT, font=('Ivy, 20 bold'), overrelief=RIDGE, bg=fundo, fg=co7)
 btn0.place(x=30, y=15)
