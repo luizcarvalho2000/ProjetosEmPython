@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="840ab6b5-463a-4ca3-a762-5d647d4acc21" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/1 soma.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/2 fibonacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/3 sequencia.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/4 calculo de distancia.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/4 calculo de distancia.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/5 codigo invertido.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/Compras.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/algoritmo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/calculadora_IMC.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/calculadora_cientifica_simples.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/calculadora_digito_livre .py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/countries.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/damas.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/fazenda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/fazentech.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/get-pip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/jogomemoria.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/logo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/loop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/posicaomause.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/qrcode_wifi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/relogio_digital.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/salao.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/tela_interativa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/tela_login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/testepygames.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/tetris.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/tetris.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/turtle_project.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Codigos iniciais em python/turtle_teste1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JogoDaVelha.py" beforeDir="false" afterPath="$PROJECT_DIR$/JogoDaVelha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pokedex/Pokedex.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pokedex/Pokedex.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
